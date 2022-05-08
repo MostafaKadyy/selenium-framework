@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="22" failed="8" ignored="26" total="82" passed="26">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="67799" started-at="2022-04-27T23:09:33 EET" finished-at="2022-04-27T23:10:41 EET">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="67799" started-at="2022-04-27T23:09:33 EET" finished-at="2022-04-27T23:10:41 EET">
+      <class name="tests.CheckoutAsGuestTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="completeOrder" duration-ms="511" started-at="2022-04-27T23:09:34 EET" finished-at="2022-04-27T23:09:34 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:34 EET" finished-at="2022-04-27T23:09:34 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=CheckoutAsGuestTest.completeOrder()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userCanSearchForProduct()[pri:1, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="userCanSearchForProduct" duration-ms="4195" started-at="2022-04-27T23:10:00 EET" finished-at="2022-04-27T23:10:04 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSearchForProduct -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:10:04 EET" finished-at="2022-04-27T23:10:04 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSearchForProduct status=SUCCESS method=CheckoutAsGuestTest.userCanSearchForProduct()[pri:1, instance:tests.CheckoutAsGuestTest@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userAddProductToCart()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="userAddProductToCart" duration-ms="44" started-at="2022-04-27T23:10:04 EET" depends-on-methods="tests.CheckoutAsGuestTest.userCanSearchForProduct" finished-at="2022-04-27T23:10:04 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddProductToCart -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:10:04 EET" finished-at="2022-04-27T23:10:04 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userAddProductToCart status=SUCCESS method=CheckoutAsGuestTest.userAddProductToCart()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="openCart()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="openCart" duration-ms="5031" started-at="2022-04-27T23:10:04 EET" depends-on-methods="tests.CheckoutAsGuestTest.userAddProductToCart" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="bar-notification"]/div/p/a"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=//*[@id="bar-notification"]/div/p/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="bar-notification"]/div/p/a"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=//*[@id="bar-notification"]/div/p/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.ProductdetailsPage.openShoppingCartpage(ProductdetailsPage.java:62)
+at tests.CheckoutAsGuestTest.openCart(CheckoutAsGuestTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCart -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="screenshotonFailure" is-config="true" duration-ms="190" started-at="2022-04-27T23:10:09 EET" finished-at="2022-04-27T23:10:09 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCart status=FAILURE method=CheckoutAsGuestTest.openCart()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="checkAsGuest()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="checkAsGuest" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.opencheckoutpage" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.checkAsGuest() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.opencheckoutpage() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.checkAsGuest() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.opencheckoutpage() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAsGuest -->
+        <test-method status="SKIP" signature="opencheckoutpage()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="opencheckoutpage" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.openCart" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.opencheckoutpage() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.openCart() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.opencheckoutpage() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.openCart() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opencheckoutpage -->
+        <test-method status="SKIP" signature="groundShippingMethod()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="groundShippingMethod" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.fillBillingAddress" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.groundShippingMethod() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.fillBillingAddress() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.groundShippingMethod() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.fillBillingAddress() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groundShippingMethod -->
+        <test-method status="SKIP" signature="fillBillingAddress()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="fillBillingAddress" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.checkAsGuest" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.fillBillingAddress() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.checkAsGuest() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.fillBillingAddress() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.checkAsGuest() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillBillingAddress -->
+        <test-method status="SKIP" signature="creditCardPaymentMethod()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="creditCardPaymentMethod" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.groundShippingMethod" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.creditCardPaymentMethod() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.groundShippingMethod() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.creditCardPaymentMethod() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.groundShippingMethod() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditCardPaymentMethod -->
+        <test-method status="SKIP" signature="PaymentInformation()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="PaymentInformation" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.creditCardPaymentMethod" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.PaymentInformation() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.creditCardPaymentMethod() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.PaymentInformation() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.creditCardPaymentMethod() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentInformation -->
+        <test-method status="SKIP" signature="openOrderDetailslink()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="openOrderDetailslink" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.confirmOrder" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.openOrderDetailslink() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.confirmOrder() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.openOrderDetailslink() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.confirmOrder() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openOrderDetailslink -->
+        <test-method status="SKIP" signature="confirmOrder()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="confirmOrder" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.PaymentInformation" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.confirmOrder() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.PaymentInformation() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.confirmOrder() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.PaymentInformation() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method status="SKIP" signature="downloadInvoic()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="downloadInvoic" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.openOrderDetailslink" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.downloadInvoic() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.openOrderDetailslink() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.downloadInvoic() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.openOrderDetailslink() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadInvoic -->
+        <test-method status="SKIP" signature="printOrder()[pri:0, instance:tests.CheckoutAsGuestTest@6913c1fb]" name="printOrder" duration-ms="0" started-at="2022-04-27T23:10:09 EET" depends-on-methods="tests.CheckoutAsGuestTest.downloadInvoic" finished-at="2022-04-27T23:10:09 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.CheckoutAsGuestTest.printOrder() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.downloadInvoic() on instance tests.CheckoutAsGuestTest@6913c1fb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.CheckoutAsGuestTest.printOrder() on instance tests.CheckoutAsGuestTest@6913c1fb depends on not successfully finished methods 
+[tests.CheckoutAsGuestTest.downloadInvoic() on instance tests.CheckoutAsGuestTest@6913c1fb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printOrder -->
+      </class> <!-- tests.CheckoutAsGuestTest -->
+      <class name="tests.EmailFriendTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.EmailFriendTest@ae13544]" name="completeOrder" duration-ms="435" started-at="2022-04-27T23:09:36 EET" finished-at="2022-04-27T23:09:36 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@ae13544]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:36 EET" finished-at="2022-04-27T23:09:36 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=EmailFriendTest.completeOrder()[pri:0, instance:tests.EmailFriendTest@ae13544] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="userCanTestSucessfully()[pri:1, instance:tests.EmailFriendTest@ae13544]" name="userCanTestSucessfully" duration-ms="5626" started-at="2022-04-27T23:10:14 EET" finished-at="2022-04-27T23:10:20 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#gender\-male"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=id, value=gender-male}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#gender\-male"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=id, value=gender-male}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.UserRegistrationPage.userRegisteration(UserRegistrationPage.java:53)
+at tests.EmailFriendTest.userCanTestSucessfully(EmailFriendTest.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanTestSucessfully -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@ae13544]" name="screenshotonFailure" is-config="true" duration-ms="131" started-at="2022-04-27T23:10:20 EET" finished-at="2022-04-27T23:10:20 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanTestSucessfully status=FAILURE method=EmailFriendTest.userCanTestSucessfully()[pri:1, instance:tests.EmailFriendTest@ae13544] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="userEmailFriendSucsessfully()[pri:0, instance:tests.EmailFriendTest@ae13544]" name="userEmailFriendSucsessfully" duration-ms="0" started-at="2022-04-27T23:10:20 EET" depends-on-methods="tests.EmailFriendTest.searchProductUsingAutoSuggest" finished-at="2022-04-27T23:10:20 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.EmailFriendTest.userEmailFriendSucsessfully() on instance tests.EmailFriendTest@ae13544 depends on not successfully finished methods 
+[tests.EmailFriendTest.searchProductUsingAutoSuggest() on instance tests.EmailFriendTest@ae13544]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.EmailFriendTest.userEmailFriendSucsessfully() on instance tests.EmailFriendTest@ae13544 depends on not successfully finished methods 
+[tests.EmailFriendTest.searchProductUsingAutoSuggest() on instance tests.EmailFriendTest@ae13544]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEmailFriendSucsessfully -->
+        <test-method status="SKIP" signature="searchProductUsingAutoSuggest()[pri:0, instance:tests.EmailFriendTest@ae13544]" name="searchProductUsingAutoSuggest" duration-ms="0" started-at="2022-04-27T23:10:20 EET" depends-on-methods="tests.EmailFriendTest.userCanTestSucessfully" finished-at="2022-04-27T23:10:20 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.EmailFriendTest.searchProductUsingAutoSuggest() on instance tests.EmailFriendTest@ae13544 depends on not successfully finished methods 
+[tests.EmailFriendTest.userCanTestSucessfully() on instance tests.EmailFriendTest@ae13544]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.EmailFriendTest.searchProductUsingAutoSuggest() on instance tests.EmailFriendTest@ae13544 depends on not successfully finished methods 
+[tests.EmailFriendTest.userCanTestSucessfully() on instance tests.EmailFriendTest@ae13544]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductUsingAutoSuggest -->
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.JewelerytSortByTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.JewelerytSortByTest@4988d8b8]" name="completeOrder" duration-ms="492" started-at="2022-04-27T23:09:36 EET" finished-at="2022-04-27T23:09:37 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.JewelerytSortByTest@4988d8b8]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:37 EET" finished-at="2022-04-27T23:09:37 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=JewelerytSortByTest.completeOrder()[pri:0, instance:tests.JewelerytSortByTest@4988d8b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userChangeSortionSucsessfully()[pri:0, instance:tests.JewelerytSortByTest@4988d8b8]" name="userChangeSortionSucsessfully" duration-ms="780" started-at="2022-04-27T23:09:44 EET" finished-at="2022-04-27T23:09:45 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userChangeSortionSucsessfully -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.JewelerytSortByTest@4988d8b8]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:45 EET" finished-at="2022-04-27T23:09:45 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userChangeSortionSucsessfully status=SUCCESS method=JewelerytSortByTest.userChangeSortionSucsessfully()[pri:0, instance:tests.JewelerytSortByTest@4988d8b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.JewelerytSortByTest -->
+      <class name="tests.userRegistrationTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.userRegistrationTest@305b7c14]" name="completeOrder" duration-ms="442" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.userRegistrationTest@305b7c14]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=userRegistrationTest.completeOrder()[pri:0, instance:tests.userRegistrationTest@305b7c14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="userCanTestSucessfully()[pri:1, instance:tests.userRegistrationTest@305b7c14]" name="userCanTestSucessfully" duration-ms="5058" started-at="2022-04-27T23:10:20 EET" finished-at="2022-04-27T23:10:25 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.HomePage.openRegisterPage(HomePage.java:47)
+at tests.userRegistrationTest.userCanTestSucessfully(userRegistrationTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanTestSucessfully -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.userRegistrationTest@305b7c14]" name="screenshotonFailure" is-config="true" duration-ms="123" started-at="2022-04-27T23:10:25 EET" finished-at="2022-04-27T23:10:25 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanTestSucessfully status=FAILURE method=userRegistrationTest.userCanTestSucessfully()[pri:1, instance:tests.userRegistrationTest@305b7c14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="userCanLoginSucesessfully()[pri:0, instance:tests.userRegistrationTest@305b7c14]" name="userCanLoginSucesessfully" duration-ms="0" started-at="2022-04-27T23:10:25 EET" depends-on-methods="tests.userRegistrationTest.userCanLogoutSucessfully" finished-at="2022-04-27T23:10:25 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.userRegistrationTest.userCanLoginSucesessfully() on instance tests.userRegistrationTest@305b7c14 depends on not successfully finished methods 
+[tests.userRegistrationTest.userCanLogoutSucessfully() on instance tests.userRegistrationTest@305b7c14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.userRegistrationTest.userCanLoginSucesessfully() on instance tests.userRegistrationTest@305b7c14 depends on not successfully finished methods 
+[tests.userRegistrationTest.userCanLogoutSucessfully() on instance tests.userRegistrationTest@305b7c14]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanLoginSucesessfully -->
+        <test-method status="SKIP" signature="userCanLogoutSucessfully()[pri:0, instance:tests.userRegistrationTest@305b7c14]" name="userCanLogoutSucessfully" duration-ms="0" started-at="2022-04-27T23:10:25 EET" depends-on-methods="tests.userRegistrationTest.userCanTestSucessfully" finished-at="2022-04-27T23:10:25 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.userRegistrationTest.userCanLogoutSucessfully() on instance tests.userRegistrationTest@305b7c14 depends on not successfully finished methods 
+[tests.userRegistrationTest.userCanTestSucessfully() on instance tests.userRegistrationTest@305b7c14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.userRegistrationTest.userCanLogoutSucessfully() on instance tests.userRegistrationTest@305b7c14 depends on not successfully finished methods 
+[tests.userRegistrationTest.userCanTestSucessfully() on instance tests.userRegistrationTest@305b7c14]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanLogoutSucessfully -->
+      </class> <!-- tests.userRegistrationTest -->
+      <class name="tests.CurrencySelectTest">
+        <test-method status="PASS" signature="UserchangeCurrencySucsessfuly()[pri:0, instance:tests.CurrencySelectTest@2de23121]" name="UserchangeCurrencySucsessfuly" duration-ms="974" started-at="2022-04-27T23:09:33 EET" finished-at="2022-04-27T23:09:34 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserchangeCurrencySucsessfuly -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CurrencySelectTest@2de23121]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:34 EET" finished-at="2022-04-27T23:09:34 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserchangeCurrencySucsessfuly status=SUCCESS method=CurrencySelectTest.UserchangeCurrencySucsessfuly()[pri:0, instance:tests.CurrencySelectTest@2de23121] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.CurrencySelectTest@2de23121]" name="completeOrder" duration-ms="456" started-at="2022-04-27T23:09:35 EET" finished-at="2022-04-27T23:09:36 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.CurrencySelectTest@2de23121]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:36 EET" finished-at="2022-04-27T23:09:36 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=CurrencySelectTest.completeOrder()[pri:0, instance:tests.CurrencySelectTest@2de23121] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.CurrencySelectTest -->
+      <class name="tests.userLoginTest">
+        <test-method status="PASS" signature="userCanLoginSucesessfully()[pri:1, instance:tests.userLoginTest@c0c2f8d]" name="userCanLoginSucesessfully" duration-ms="1186" started-at="2022-04-27T23:09:52 EET" finished-at="2022-04-27T23:09:53 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanLoginSucesessfully -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.userLoginTest@c0c2f8d]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:53 EET" finished-at="2022-04-27T23:09:53 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanLoginSucesessfully status=SUCCESS method=userLoginTest.userCanLoginSucesessfully()[pri:1, instance:tests.userLoginTest@c0c2f8d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="completeOrder()[pri:2, instance:tests.userLoginTest@c0c2f8d]" name="completeOrder" duration-ms="5035" started-at="2022-04-27T23:10:30 EET" finished-at="2022-04-27T23:10:35 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[2]/div[1]/a/img"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=/html/body/div[6]/div[1]/div[2]/div[1]/a/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[2]/div[1]/a/img"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=xpath, value=/html/body/div[6]/div[1]/div[2]/div[1]/a/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.CheckoutPage.orderCompeted(CheckoutPage.java:142)
+at tests.userLoginTest.completeOrder(userLoginTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.userLoginTest@c0c2f8d]" name="screenshotonFailure" is-config="true" duration-ms="135" started-at="2022-04-27T23:10:35 EET" finished-at="2022-04-27T23:10:36 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=FAILURE method=userLoginTest.completeOrder()[pri:2, instance:tests.userLoginTest@c0c2f8d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.userLoginTest -->
+      <class name="tests.ShoppingCartTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="completeOrder" duration-ms="443" started-at="2022-04-27T23:09:38 EET" finished-at="2022-04-27T23:09:38 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:38 EET" finished-at="2022-04-27T23:09:38 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=ShoppingCartTest.completeOrder()[pri:0, instance:tests.ShoppingCartTest@43c1b556] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="userCanSearchForProduct()[pri:1, instance:tests.ShoppingCartTest@43c1b556]" name="userCanSearchForProduct" duration-ms="5086" started-at="2022-04-27T23:10:09 EET" finished-at="2022-04-27T23:10:14 EET">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, clickElement {id=9de77dcb-bcf6-4b24-8a7d-d265d518e02d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0827e521721be7108fb5c63347f9ca16)] -> id: ui-id-1]
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, clickElement {id=9de77dcb-bcf6-4b24-8a7d-d265d518e02d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0827e521721be7108fb5c63347f9ca16)] -> id: ui-id-1]
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.SearchPage.searchByAutocmplete(SearchPage.java:47)
+at tests.ShoppingCartTest.userCanSearchForProduct(ShoppingCartTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSearchForProduct -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="screenshotonFailure" is-config="true" duration-ms="178" started-at="2022-04-27T23:10:14 EET" finished-at="2022-04-27T23:10:14 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSearchForProduct status=FAILURE method=ShoppingCartTest.userCanSearchForProduct()[pri:1, instance:tests.ShoppingCartTest@43c1b556] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="openCart()[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="openCart" duration-ms="0" started-at="2022-04-27T23:10:14 EET" depends-on-methods="tests.ShoppingCartTest.userAddProductToCart" finished-at="2022-04-27T23:10:14 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ShoppingCartTest.openCart() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.userAddProductToCart() on instance tests.ShoppingCartTest@43c1b556]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ShoppingCartTest.openCart() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.userAddProductToCart() on instance tests.ShoppingCartTest@43c1b556]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCart -->
+        <test-method status="SKIP" signature="checkingProduct()[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="checkingProduct" duration-ms="0" started-at="2022-04-27T23:10:14 EET" depends-on-methods="tests.ShoppingCartTest.openCart" finished-at="2022-04-27T23:10:14 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ShoppingCartTest.checkingProduct() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.openCart() on instance tests.ShoppingCartTest@43c1b556]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ShoppingCartTest.checkingProduct() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.openCart() on instance tests.ShoppingCartTest@43c1b556]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingProduct -->
+        <test-method status="SKIP" signature="userAddProductToCart()[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="userAddProductToCart" duration-ms="0" started-at="2022-04-27T23:10:14 EET" depends-on-methods="tests.ShoppingCartTest.userCanSearchForProduct" finished-at="2022-04-27T23:10:14 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ShoppingCartTest.userAddProductToCart() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.userCanSearchForProduct() on instance tests.ShoppingCartTest@43c1b556]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ShoppingCartTest.userAddProductToCart() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.userCanSearchForProduct() on instance tests.ShoppingCartTest@43c1b556]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddProductToCart -->
+        <test-method status="SKIP" signature="addQty()[pri:0, instance:tests.ShoppingCartTest@43c1b556]" name="addQty" duration-ms="0" started-at="2022-04-27T23:10:14 EET" depends-on-methods="tests.ShoppingCartTest.checkingProduct" finished-at="2022-04-27T23:10:14 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ShoppingCartTest.addQty() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.checkingProduct() on instance tests.ShoppingCartTest@43c1b556]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ShoppingCartTest.addQty() on instance tests.ShoppingCartTest@43c1b556 depends on not successfully finished methods 
+[tests.ShoppingCartTest.checkingProduct() on instance tests.ShoppingCartTest@43c1b556]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addQty -->
+      </class> <!-- tests.ShoppingCartTest -->
+      <class name="tests.SearchProductTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.SearchProductTest@7dc0f706]" name="completeOrder" duration-ms="480" started-at="2022-04-27T23:09:37 EET" finished-at="2022-04-27T23:09:38 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@7dc0f706]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:38 EET" finished-at="2022-04-27T23:09:38 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=SearchProductTest.completeOrder()[pri:0, instance:tests.SearchProductTest@7dc0f706] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@7dc0f706]" name="userCanSearchForProduct" duration-ms="1642" started-at="2022-04-27T23:09:43 EET" finished-at="2022-04-27T23:09:44 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSearchForProduct -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@7dc0f706]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:44 EET" finished-at="2022-04-27T23:09:44 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSearchForProduct status=SUCCESS method=SearchProductTest.userCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@7dc0f706] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ReviewTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ReviewTest@70325e14]" name="startDriver" is-config="true" duration-ms="4200" started-at="2022-04-27T23:09:29 EET" finished-at="2022-04-27T23:09:33 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.ReviewTest@70325e14]" name="completeOrder" duration-ms="483" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:40 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewTest@70325e14]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:40 EET" finished-at="2022-04-27T23:09:40 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=ReviewTest.completeOrder()[pri:0, instance:tests.ReviewTest@70325e14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="userCanRegiset()[pri:1, instance:tests.ReviewTest@70325e14]" name="userCanRegiset" duration-ms="6548" started-at="2022-04-27T23:09:53 EET" finished-at="2022-04-27T23:09:59 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a.button-1.register-continue-button"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=css selector, value=a.button-1.register-continue-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a.button-1.register-continue-button"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=css selector, value=a.button-1.register-continue-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.UserRegistrationPage.userRegisteration(UserRegistrationPage.java:61)
+at tests.ReviewTest.userCanRegiset(ReviewTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanRegiset -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ReviewTest@70325e14]" name="screenshotonFailure" is-config="true" duration-ms="133" started-at="2022-04-27T23:09:59 EET" finished-at="2022-04-27T23:10:00 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanRegiset status=FAILURE method=ReviewTest.userCanRegiset()[pri:1, instance:tests.ReviewTest@70325e14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="userSearchProduct()[pri:0, instance:tests.ReviewTest@70325e14]" name="userSearchProduct" duration-ms="0" started-at="2022-04-27T23:10:00 EET" depends-on-methods="tests.ReviewTest.userCanRegiset" finished-at="2022-04-27T23:10:00 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ReviewTest.userSearchProduct() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userCanRegiset() on instance tests.ReviewTest@70325e14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ReviewTest.userSearchProduct() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userCanRegiset() on instance tests.ReviewTest@70325e14]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearchProduct -->
+        <test-method status="SKIP" signature="userAddReview()[pri:0, instance:tests.ReviewTest@70325e14]" name="userAddReview" duration-ms="0" started-at="2022-04-27T23:10:00 EET" depends-on-methods="tests.ReviewTest.userSearchProduct" finished-at="2022-04-27T23:10:00 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ReviewTest.userAddReview() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userSearchProduct() on instance tests.ReviewTest@70325e14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ReviewTest.userAddReview() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userSearchProduct() on instance tests.ReviewTest@70325e14]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddReview -->
+        <test-method status="SKIP" signature="userCanLogout()[pri:0, instance:tests.ReviewTest@70325e14]" name="userCanLogout" duration-ms="0" started-at="2022-04-27T23:10:00 EET" depends-on-methods="tests.ReviewTest.userAddReview" finished-at="2022-04-27T23:10:00 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ReviewTest.userCanLogout() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userAddReview() on instance tests.ReviewTest@70325e14]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ReviewTest.userCanLogout() on instance tests.ReviewTest@70325e14 depends on not successfully finished methods 
+[tests.ReviewTest.userAddReview() on instance tests.ReviewTest@70325e14]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanLogout -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ReviewTest@70325e14]" name="stopDriver" is-config="true" duration-ms="590" started-at="2022-04-27T23:10:41 EET" finished-at="2022-04-27T23:10:41 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.ReviewTest -->
+      <class name="tests.WishlistTset">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="completeOrder" duration-ms="453" started-at="2022-04-27T23:09:38 EET" finished-at="2022-04-27T23:09:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=WishlistTset.completeOrder()[pri:0, instance:tests.WishlistTset@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="searchForproduct()[pri:1, instance:tests.WishlistTset@22fcf7ab]" name="searchForproduct" duration-ms="2394" started-at="2022-04-27T23:09:47 EET" finished-at="2022-04-27T23:09:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForproduct -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:50 EET" finished-at="2022-04-27T23:09:50 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchForproduct status=SUCCESS method=WishlistTset.searchForproduct()[pri:1, instance:tests.WishlistTset@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="addItemToWishist()[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="addItemToWishist" duration-ms="48" started-at="2022-04-27T23:09:50 EET" depends-on-methods="tests.WishlistTset.searchForproduct" finished-at="2022-04-27T23:09:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToWishist -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="screenshotonFailure" is-config="true" duration-ms="1" started-at="2022-04-27T23:09:50 EET" finished-at="2022-04-27T23:09:50 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addItemToWishist status=SUCCESS method=WishlistTset.addItemToWishist()[pri:0, instance:tests.WishlistTset@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="openwishlistPage()[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="openwishlistPage" duration-ms="1314" started-at="2022-04-27T23:09:50 EET" depends-on-methods="tests.WishlistTset.addItemToWishist" finished-at="2022-04-27T23:09:51 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openwishlistPage -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:51 EET" finished-at="2022-04-27T23:09:51 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openwishlistPage status=SUCCESS method=WishlistTset.openwishlistPage()[pri:0, instance:tests.WishlistTset@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="removeItemFromWishlist()[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="removeItemFromWishlist" duration-ms="454" started-at="2022-04-27T23:09:51 EET" depends-on-methods="tests.WishlistTset.openwishlistPage" finished-at="2022-04-27T23:09:52 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromWishlist -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.WishlistTset@22fcf7ab]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:52 EET" finished-at="2022-04-27T23:09:52 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeItemFromWishlist status=SUCCESS method=WishlistTset.removeItemFromWishlist()[pri:0, instance:tests.WishlistTset@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.WishlistTset -->
+      <class name="tests.ComparisonTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.ComparisonTest@587e5365]" name="completeOrder" duration-ms="523" started-at="2022-04-27T23:09:34 EET" finished-at="2022-04-27T23:09:35 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ComparisonTest@587e5365]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:35 EET" finished-at="2022-04-27T23:09:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=ComparisonTest.completeOrder()[pri:0, instance:tests.ComparisonTest@587e5365] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="FAIL" signature="usercanAddFirstItemToproduct()[pri:1, instance:tests.ComparisonTest@587e5365]" name="usercanAddFirstItemToproduct" duration-ms="5005" started-at="2022-04-27T23:10:25 EET" finished-at="2022-04-27T23:10:30 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#small\-searchterms"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=id, value=small-searchterms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#small\-searchterms"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=id, value=small-searchterms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at pages.PageBase.sendTxtElementTxt(PageBase.java:33)
+at pages.SearchPage.searchForProdutsName(SearchPage.java:31)
+at tests.ComparisonTest.usercanAddFirstItemToproduct(ComparisonTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercanAddFirstItemToproduct -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ComparisonTest@587e5365]" name="screenshotonFailure" is-config="true" duration-ms="124" started-at="2022-04-27T23:10:30 EET" finished-at="2022-04-27T23:10:30 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usercanAddFirstItemToproduct status=FAILURE method=ComparisonTest.usercanAddFirstItemToproduct()[pri:1, instance:tests.ComparisonTest@587e5365] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="SKIP" signature="usercanAddSecondItemToproduct()[pri:0, instance:tests.ComparisonTest@587e5365]" name="usercanAddSecondItemToproduct" duration-ms="0" started-at="2022-04-27T23:10:30 EET" depends-on-methods="tests.ComparisonTest.usercanAddFirstItemToproduct" finished-at="2022-04-27T23:10:30 EET">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.ComparisonTest.usercanAddSecondItemToproduct() on instance tests.ComparisonTest@587e5365 depends on not successfully finished methods 
+[tests.ComparisonTest.usercanAddFirstItemToproduct() on instance tests.ComparisonTest@587e5365]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.ComparisonTest.usercanAddSecondItemToproduct() on instance tests.ComparisonTest@587e5365 depends on not successfully finished methods 
+[tests.ComparisonTest.usercanAddFirstItemToproduct() on instance tests.ComparisonTest@587e5365]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercanAddSecondItemToproduct -->
+        <test-method status="FAIL" signature="removeCoparisonProducts()[pri:3, instance:tests.ComparisonTest@587e5365]" name="removeCoparisonProducts" duration-ms="5008" started-at="2022-04-27T23:10:36 EET" finished-at="2022-04-27T23:10:41 EET">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"product comparison"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=link text, value=product comparison}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"product comparison"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-COEV6PK', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0827e521721be7108fb5c63347f9ca16, findElement {using=link text, value=product comparison}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\COMPUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56894/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0827e521721be7108fb5c63347f9ca16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:28)
+at pages.ProductdetailsPage.opncomparisonPage(ProductdetailsPage.java:50)
+at tests.ComparisonTest.removeCoparisonProducts(ComparisonTest.java:48)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCoparisonProducts -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ComparisonTest@587e5365]" name="screenshotonFailure" is-config="true" duration-ms="154" started-at="2022-04-27T23:10:41 EET" finished-at="2022-04-27T23:10:41 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeCoparisonProducts status=FAILURE method=ComparisonTest.removeCoparisonProducts()[pri:3, instance:tests.ComparisonTest@587e5365] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.ComparisonTest -->
+      <class name="tests.ContactUsTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.ContactUsTest@4009e306]" name="completeOrder" duration-ms="443" started-at="2022-04-27T23:09:35 EET" finished-at="2022-04-27T23:09:35 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@4009e306]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:35 EET" finished-at="2022-04-27T23:09:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=ContactUsTest.completeOrder()[pri:0, instance:tests.ContactUsTest@4009e306] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userUseContactUsQuery()[pri:0, instance:tests.ContactUsTest@4009e306]" name="userUseContactUsQuery" duration-ms="1406" started-at="2022-04-27T23:09:46 EET" finished-at="2022-04-27T23:09:47 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userUseContactUsQuery -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@4009e306]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:47 EET" finished-at="2022-04-27T23:09:47 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userUseContactUsQuery status=SUCCESS method=ContactUsTest.userUseContactUsQuery()[pri:0, instance:tests.ContactUsTest@4009e306] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.hoverMenuTset">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.hoverMenuTset@3d34d211]" name="completeOrder" duration-ms="444" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.hoverMenuTset@3d34d211]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:39 EET" finished-at="2022-04-27T23:09:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=hoverMenuTset.completeOrder()[pri:0, instance:tests.hoverMenuTset@3d34d211] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="userOpennootbookspage()[pri:0, instance:tests.hoverMenuTset@3d34d211]" name="userOpennootbookspage" duration-ms="880" started-at="2022-04-27T23:09:45 EET" finished-at="2022-04-27T23:09:46 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userOpennootbookspage -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.hoverMenuTset@3d34d211]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:46 EET" finished-at="2022-04-27T23:09:46 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userOpennootbookspage status=SUCCESS method=hoverMenuTset.userOpennootbookspage()[pri:0, instance:tests.hoverMenuTset@3d34d211] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.hoverMenuTset -->
+      <class name="tests.SearchProductByAutocompleteTest">
+        <test-method status="PASS" signature="completeOrder()[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace]" name="completeOrder" duration-ms="448" started-at="2022-04-27T23:09:37 EET" finished-at="2022-04-27T23:09:37 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:37 EET" finished-at="2022-04-27T23:09:37 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeOrder status=SUCCESS method=SearchProductByAutocompleteTest.completeOrder()[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+        <test-method status="PASS" signature="searchProductUsingAutoSuggest()[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace]" name="searchProductUsingAutoSuggest" duration-ms="2806" started-at="2022-04-27T23:09:40 EET" finished-at="2022-04-27T23:09:43 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductUsingAutoSuggest -->
+        <test-method status="PASS" signature="screenshotonFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace]" name="screenshotonFailure" is-config="true" duration-ms="0" started-at="2022-04-27T23:09:43 EET" finished-at="2022-04-27T23:09:43 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProductUsingAutoSuggest status=SUCCESS method=SearchProductByAutocompleteTest.searchProductUsingAutoSuggest()[pri:0, instance:tests.SearchProductByAutocompleteTest@63475ace] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotonFailure -->
+      </class> <!-- tests.SearchProductByAutocompleteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

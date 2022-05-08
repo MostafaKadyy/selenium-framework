@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="Test" preserve-order="false">
+		<classes>
+
+			<class name="tests.ReviewTest" />
+			<class name="tests.EmailFriendTest" />
+			<class name="tests.hoverMenuTset" />
+			<class name="tests.SearchProductTest" />
+			<class name="tests.ContactUsTest" />
+			<class name="tests.ShoppingCartTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

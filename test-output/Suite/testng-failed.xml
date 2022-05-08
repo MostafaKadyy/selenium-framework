@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.userLoginTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="screenshotonFailure"/>
+          <include name="completeOrder"/>
+        </methods>
+      </class> <!-- tests.userLoginTest -->
+      <class name="tests.ShoppingCartTest">
+        <methods>
+          <include name="userAddProductToCart"/>
+          <include name="startDriver"/>
+          <include name="openCart"/>
+          <include name="userCanSearchForProduct"/>
+          <include name="stopDriver"/>
+          <include name="checkingProduct"/>
+          <include name="addQty"/>
+          <include name="screenshotonFailure"/>
+        </methods>
+      </class> <!-- tests.ShoppingCartTest -->
+      <class name="tests.userRegistrationTest">
+        <methods>
+          <include name="userCanLoginSucesessfully"/>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="userCanLogoutSucessfully"/>
+          <include name="screenshotonFailure"/>
+          <include name="userCanTestSucessfully"/>
+        </methods>
+      </class> <!-- tests.userRegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

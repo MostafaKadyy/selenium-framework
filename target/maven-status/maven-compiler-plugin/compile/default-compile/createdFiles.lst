@@ -1,0 +1,16 @@
+pages\ShoppingCartPage.class
+pages\JewelryPage.class
+pages\HomePage.class
+pages\ProductdetailsPage.class
+pages\ComparisonPage.class
+pages\ContactUsPage.class
+pages\CurrencyPage.class
+pages\ReviewPage.class
+pages\loginPage.class
+pages\SearchPage.class
+pages\CheckoutPage.class
+pages\PageBase.class
+pages\MyaccountPage.class
+pages\UserRegistrationPage.class
+pages\WishlistPage.class
+pages\EmailFriendPage.class

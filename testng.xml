@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="Test" preserve-order="false">
+		<classes>
+
+			<class name="tests.ReviewTest" />
+			<class name="tests.EmailFriendTest" />
+			<class name="tests.hoverMenuTset" />
+			<class name="tests.SearchProductTest" />
+			<class name="tests.ContactUsTest" />
+			<class name="tests.ShoppingCartTest" />
+			<class name="tests.ComparisonTest" />
+			<class name="tests.WishlistTset" />
+			<class name="tests.CurrencySelectTest" />
+			<class name="tests.SearchProductByAutocompleteTest" />
+			<class name="tests.JewelerytSortByTest" />
+			<class name="tests.userLoginTest" />
+			<class name="tests.userRegistrationTest" />
+			<class name="tests.CheckoutAsGuestTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
