@@ -8,7 +8,7 @@ Feature: user registration
 	Then  the registration page displayed sucsessfully
 	
 	Examples:
-| firsName   | lastName | email          | companyName | password |
-| hafdvssan  | morkgos  | hosdr@nana.com | xoxo        | 123456ss |
-| hassavfdn  | morkaos  | hmbsr@nana.com | xoxo        | 123456ss |
-| hassdfvsan | morskos  | hmor@nana.com  | xoxo 		  	| 123456ss |
+| firsName   | lastName  | email          | companyName | password |
+| mostafa  | mortkgos  | hamada@kaday.com| kxoxo        | 123456ss |
+| hasavfdn  | modrkaos  | sm2bass6@nashna.com | xoxko        | 123456ss |
+| hasdfsan | morjskos  | amog6a4r@nadnaa.com  | xkoxo 		  	| 123456ss |
