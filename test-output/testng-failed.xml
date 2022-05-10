@@ -6,7 +6,7 @@
       <class name="runners.TestRunner">
         <methods>
           <include name="startDriver"/>
-          <include name="runScenario"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="setUpClass"/>
           <include name="stopDriver"/>
           <include name="screenshotonFailure"/>

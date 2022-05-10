@@ -1,39 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="headless"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.userLoginTest">
+      <class name="tests.SearchProductTest">
         <methods>
           <include name="startDriver"/>
+          <include name="userCanSearchForProduct"/>
+          <include name="setUpClass"/>
           <include name="stopDriver"/>
           <include name="screenshotonFailure"/>
           <include name="completeOrder"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- tests.userLoginTest -->
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ReviewTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userAddReview"/>
+          <include name="userSearchProduct"/>
+          <include name="setUpClass"/>
+          <include name="userCanRegiset"/>
+          <include name="stopDriver"/>
+          <include name="userCanLogout"/>
+          <include name="completeOrder"/>
+          <include name="screenshotonFailure"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- tests.ReviewTest -->
+      <class name="tests.EmailFriendTest">
+        <methods>
+          <include name="userCanTestSucessfully"/>
+          <include name="startDriver"/>
+          <include name="completeOrder"/>
+          <include name="userEmailFriendSucsessfully"/>
+          <include name="setUpClass"/>
+          <include name="stopDriver"/>
+          <include name="searchProductUsingAutoSuggest"/>
+          <include name="screenshotonFailure"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userUseContactUsQuery"/>
+          <include name="setUpClass"/>
+          <include name="stopDriver"/>
+          <include name="screenshotonFailure"/>
+          <include name="tearDownClass"/>
+          <include name="completeOrder"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.hoverMenuTset">
+        <methods>
+          <include name="userOpennootbookspage"/>
+          <include name="startDriver"/>
+          <include name="setUpClass"/>
+          <include name="stopDriver"/>
+          <include name="screenshotonFailure"/>
+          <include name="tearDownClass"/>
+          <include name="completeOrder"/>
+        </methods>
+      </class> <!-- tests.hoverMenuTset -->
       <class name="tests.ShoppingCartTest">
         <methods>
           <include name="userAddProductToCart"/>
-          <include name="startDriver"/>
           <include name="openCart"/>
+          <include name="startDriver"/>
+          <include name="setUpClass"/>
           <include name="userCanSearchForProduct"/>
           <include name="stopDriver"/>
-          <include name="checkingProduct"/>
-          <include name="addQty"/>
+          <include name="completeOrder"/>
           <include name="screenshotonFailure"/>
+          <include name="addQty"/>
+          <include name="checkingProduct"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- tests.ShoppingCartTest -->
-      <class name="tests.userRegistrationTest">
-        <methods>
-          <include name="userCanLoginSucesessfully"/>
-          <include name="startDriver"/>
-          <include name="stopDriver"/>
-          <include name="userCanLogoutSucessfully"/>
-          <include name="screenshotonFailure"/>
-          <include name="userCanTestSucessfully"/>
-        </methods>
-      </class> <!-- tests.userRegistrationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
